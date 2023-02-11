@@ -1,10 +1,20 @@
 {
-  "name": "gamma",
+  "name": "gamma-logger",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./lib/index.ts",
   "license": "MIT",
+  "author": "gus-messagi",
   "scripts": {
     "build": "tsc --project tsconfig.json"
+  },
+  "keywords": [
+    "logger",
+    "typescript",
+    "dynamodb"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gus-messagi/gamma-logger"
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.267.0",
@@ -21,5 +31,8 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "ts-node": "^10.9.1"
+  },
+  "engines": {
+    "node": ">=14.17.0"
   }
 }
