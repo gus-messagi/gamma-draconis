@@ -24,7 +24,7 @@ Once we have done this, we can create and instance of Logger and use logging fun
 ### Example
 
 ```ts
-import Logger from 'gamma-logger'
+import Logger from 'gamma-draconis'
 
 const logger = new Logger(
   {
