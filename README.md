@@ -1,6 +1,6 @@
 # Gamma Draconis
 
-[![npm version](https://badge.fury.io/js/gamma-draconis-logger.svg)](https://www.npmjs.com/package/gamma-draconis-logger)
+[![npm version](https://badge.fury.io/js/gamma-draconis.svg)](https://www.npmjs.com/package/gamma-draconis)
 
 Gamma Draconis is a simple logger library based on [Single-Table Design](https://aws.amazon.com/pt/blogs/compute/creating-a-single-table-design-with-amazon-dynamodb/) and [DynamoDb](https://aws.amazon.com/dynamodb).
 
