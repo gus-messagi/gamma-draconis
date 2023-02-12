@@ -1,5 +1,5 @@
 import dotenv from 'dotenv'
-import Logger from '../lib'
+import Logger from 'gamma-draconis'
 
 dotenv.config()
 
@@ -8,6 +8,14 @@ const secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY ?? ''
 const region = process.env.REGION ?? ''
 const dynamodb = process.env.TABLE_NAME ?? ''
 
-const logger = new Logger({ accessKeyId, secretAccessKey, region, dynamodb }, 'my-api')
+const logger = new Logger(
+  {
+    accessKeyId,
+    secretAccessKey,
+    region,
+    dynamodb
+  },
+  'my-application'
+)
 
 export default logger
