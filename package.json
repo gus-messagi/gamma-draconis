@@ -1,8 +1,10 @@
 {
   "name": "gamma-draconis",
-  "version": "1.0.1",
-  "main": "./lib/index.ts",
+  "version": "1.0.4",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "license": "MIT",
+  "description": "Gamma Draconis is a simple logger",
   "author": "gus-messagi",
   "scripts": {
     "build": "tsc --project tsconfig.json"
@@ -19,6 +21,7 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.267.0",
     "@aws-sdk/util-dynamodb": "^3.267.0",
+    "gamma-draconis": "^1.0.4",
     "typescript": "*"
   },
   "devDependencies": {
@@ -34,5 +37,8 @@
   },
   "engines": {
     "node": ">=14.17.0"
-  }
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }

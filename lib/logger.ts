@@ -1,8 +1,8 @@
-import { type LogType, type AWSCredentials, type ILogger } from './types/logger'
+import { type LogType, type AWSCredentials, type ILogger } from './types'
 import { DynamoDBClient, PutItemCommand } from '@aws-sdk/client-dynamodb'
 import { marshall } from '@aws-sdk/util-dynamodb'
 
-export class Logger implements ILogger {
+export default class Logger implements ILogger {
   credentials: AWSCredentials
   dynamodb: DynamoDBClient
   application: string
